@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="abu_store_management.Calculate_sum_per_dayFXMLController">
+   <children>
+      <TableView fx:id="table_product_financial_details" layoutX="19.0" layoutY="74.0" prefHeight="335.0" prefWidth="1195.0">
+         <columns>
+            <TableColumn fx:id="product_id" prefWidth="113.99999749660492" text="PRODUCT_ID" />
+            <TableColumn fx:id="product_name" prefWidth="114.00000762939453" text="PRODUCT_NAME" />
+            <TableColumn fx:id="price_per_product" minWidth="0.0" prefWidth="171.33331298828125" text="PRICE_PER_PRODUCT (FCFA)" />
+            <TableColumn fx:id="entry_date" prefWidth="149.99998474121094" text="ENTRY_DATE" />
+            <TableColumn fx:id="entry_quantity" prefWidth="127.333251953125" text="ENTRY_QUANTITY" />
+            <TableColumn fx:id="sold_date" prefWidth="144.0" text="SOLD_DATE" />
+            <TableColumn fx:id="sold_quantity" prefWidth="102.66668701171875" text="SOLD_QUANTITY" />
+            <TableColumn fx:id="sold_price" prefWidth="114.66665649414062" text="SOLD_PRICE (FCFA)" />
+            <TableColumn fx:id="remaining_quantity" prefWidth="155.3333740234375" text="REMAINING_QUANTITY" />
+         </columns>
+      </TableView>
+      <Button fx:id="home" layoutX="2.0" layoutY="1.0" mnemonicParsing="false" onAction="#btnhome" prefHeight="72.0" prefWidth="63.0" text="HOME" />
+      <ComboBox fx:id="select_date" layoutX="164.0" layoutY="14.0" onAction="#btnselect_date" prefHeight="25.0" prefWidth="228.0" promptText="--SELECT DATE--" />
+      <Button fx:id="calculate_total_amount" layoutX="392.0" layoutY="14.0" mnemonicParsing="false" onAction="#btncalculate_total_amount" text="CALCULATE TOTAL AMOUNT" />
+      <Label fx:id="total_amount" layoutX="733.0" layoutY="13.0" prefHeight="27.0" prefWidth="479.0" textFill="#0365f7">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="579.0" layoutY="14.0" text="TOTAL AMOUNT:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abu_store_management.HomeFXMLController">
+   <children>
+      <Button fx:id="add_new_product" layoutX="60.0" layoutY="39.0" mnemonicParsing="false" onAction="#add_new_product_function" prefHeight="65.0" prefWidth="138.0" text="ADD NEW PRODUCT">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="remove_product" layoutX="330.0" layoutY="38.0" mnemonicParsing="false" onAction="#remove_product_function" prefHeight="65.0" prefWidth="153.0" text="REMOVE PRODUCT">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="view_product_details" layoutX="53.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnview_product_details" prefHeight="65.0" prefWidth="163.0" text="VIEW PRODUCT DETAILS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="view_financial_details" layoutX="327.0" layoutY="306.0" mnemonicParsing="false" onAction="#btnview_financial_details" prefHeight="65.0" prefWidth="172.0" text="VIEW FINANCIAL DETAILS">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="add_daily_sales" layoutX="57.0" layoutY="167.0" mnemonicParsing="false" onAction="#btnadd_daily_sales" prefHeight="65.0" prefWidth="138.0" text="ADD DAILY SALES">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="calculate_sum_per_day" layoutX="287.0" layoutY="167.0" mnemonicParsing="false" onAction="#btncalculation_sum_per_day" prefHeight="65.0" prefWidth="233.0" text="CALCULATE TOTAL SUM FOR A DAY">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

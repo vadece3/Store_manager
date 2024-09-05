@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import ValidateTextfield.custom.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="abu_store_management.Add_daily_salesFXMLController">
+   <children>
+      <ComboBox fx:id="product_name" layoutX="225.0" layoutY="77.0" prefHeight="25.0" prefWidth="187.0" promptText="--SELECT PRODUCT--" />
+      <NumberTextField fx:id="product_quantity" layoutX="226.0" layoutY="140.0"  prefHeight="25.0" prefWidth="187.0" promptText="--ENTER QUANTITY SOLD--" />
+      <NumberTextField fx:id="sold_price" layoutX="226.0" layoutY="211.0" prefHeight="25.0" prefWidth="187.0" promptText="--ENTER SOLD PRICE--" />
+      <Label layoutX="417.0" layoutY="209.0" text="FCFA">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="save" layoutX="210.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnsave" text="SAVE" />
+      <Button fx:id="save_plus_home" layoutX="293.0" layoutY="301.0" mnemonicParsing="false" onAction="#btnsave_plus_home" text="SAVE AND BACK TO HOME" />
+      <Button fx:id="home" layoutX="30.0" layoutY="21.0" mnemonicParsing="false" onAction="#btnhome" text="HOME" />
+      <Label fx:id="bad_notif" layoutX="151.0" layoutY="15.0" prefHeight="27.0" prefWidth="379.0" textFill="#e50a0a">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="good_notif" layoutX="151.0" layoutY="43.0" prefHeight="25.0" prefWidth="379.0" textFill="#044dec">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="entry_date" layoutX="6.0" layoutY="77.0" onAction="#btnentry_date" prefHeight="25.0" prefWidth="204.0" promptText="--SELECT DATE OF ENTRY--" />
+   </children>
+</AnchorPane>

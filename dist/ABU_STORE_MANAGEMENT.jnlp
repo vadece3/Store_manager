@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ABU_STORE_MANAGEMENT.jnlp">
+  <information>
+    <title>ABU_STORE_MANAGEMENT</title>
+    <vendor>KAMDEM VADECE</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ABU_STORE_MANAGEMENT.jar" size="40419" download="eager" />
+    <jar href="lib\controlsfx-8.40.12.jar" size="996389" download="eager" />
+    <jar href="lib\gembox-spreadsheet.jar" size="8107577" download="eager" />
+    <jar href="lib\javafx-swt.jar" size="37085" download="eager" />
+    <jar href="lib\javafx.base.jar" size="751072" download="eager" />
+    <jar href="lib\javafx.controls.jar" size="2530489" download="eager" />
+    <jar href="lib\javafx.fxml.jar" size="126766" download="eager" />
+    <jar href="lib\javafx.graphics.jar" size="4335633" download="eager" />
+    <jar href="lib\javafx.media.jar" size="266786" download="eager" />
+    <jar href="lib\javafx.swing.jar" size="88701" download="eager" />
+    <jar href="lib\javafx.web.jar" size="724982" download="eager" />
+    <jar href="lib\mysql-connector.jar" size="540852" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="abu_store_management.ABU_STORE_MANAGEMENT"  name="ABU_STORE_MANAGEMENT" />
+  <update check="always"/>
+</jnlp>
